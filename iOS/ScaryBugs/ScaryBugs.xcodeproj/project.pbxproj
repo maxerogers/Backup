@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF5DFE6A19AD1572006DC573 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DFE6919AD1572006DC573 /* Foundation.framework */; };
+		AF5DFE6C19AD1572006DC573 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DFE6B19AD1572006DC573 /* CoreGraphics.framework */; };
+		AF5DFE6E19AD1572006DC573 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DFE6D19AD1572006DC573 /* UIKit.framework */; };
+		AF5DFE7419AD1572006DC573 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFE7219AD1572006DC573 /* InfoPlist.strings */; };
+		AF5DFE7619AD1572006DC573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFE7519AD1572006DC573 /* main.m */; };
+		AF5DFE7A19AD1572006DC573 /* MERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFE7919AD1572006DC573 /* MERAppDelegate.m */; };
+		AF5DFE7D19AD1572006DC573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFE7B19AD1572006DC573 /* Main.storyboard */; };
+		AF5DFE8019AD1572006DC573 /* MERMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFE7F19AD1572006DC573 /* MERMasterViewController.m */; };
+		AF5DFE8319AD1572006DC573 /* MERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFE8219AD1572006DC573 /* MERDetailViewController.m */; };
+		AF5DFE8519AD1572006DC573 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFE8419AD1572006DC573 /* Images.xcassets */; };
+		AF5DFE8C19AD1572006DC573 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DFE8B19AD1572006DC573 /* XCTest.framework */; };
+		AF5DFE8D19AD1572006DC573 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DFE6919AD1572006DC573 /* Foundation.framework */; };
+		AF5DFE8E19AD1572006DC573 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DFE6D19AD1572006DC573 /* UIKit.framework */; };
+		AF5DFE9619AD1572006DC573 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFE9419AD1572006DC573 /* InfoPlist.strings */; };
+		AF5DFE9819AD1572006DC573 /* ScaryBugsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFE9719AD1572006DC573 /* ScaryBugsTests.m */; };
+		AF5DFEA519AD179B006DC573 /* MERScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFEA419AD179B006DC573 /* MERScaryBugData.m */; };
+		AF5DFEA819AD184F006DC573 /* MERScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFEA719AD184F006DC573 /* MERScaryBugDoc.m */; };
+		AF5DFEB319AD1C85006DC573 /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEAA19AD1C85006DC573 /* attribution.txt */; };
+		AF5DFEB419AD1C85006DC573 /* centipede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEAB19AD1C85006DC573 /* centipede.jpg */; };
+		AF5DFEB519AD1C85006DC573 /* centipedeThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEAC19AD1C85006DC573 /* centipedeThumb.jpg */; };
+		AF5DFEB619AD1C85006DC573 /* ladybug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEAD19AD1C85006DC573 /* ladybug.jpg */; };
+		AF5DFEB719AD1C85006DC573 /* ladybugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEAE19AD1C85006DC573 /* ladybugThumb.jpg */; };
+		AF5DFEB819AD1C85006DC573 /* potatoBug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEAF19AD1C85006DC573 /* potatoBug.jpg */; };
+		AF5DFEB919AD1C85006DC573 /* potatoBugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEB019AD1C85006DC573 /* potatoBugThumb.jpg */; };
+		AF5DFEBA19AD1C85006DC573 /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEB119AD1C85006DC573 /* wolfSpider.jpg */; };
+		AF5DFEBB19AD1C85006DC573 /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEB219AD1C85006DC573 /* wolfSpiderThumb.jpg */; };
+		AF5DFEBF19AD4297006DC573 /* RWTRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFEBE19AD4297006DC573 /* RWTRateView.m */; };
+		AF5DFEC319AD42B4006DC573 /* RWTUIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5DFEC219AD42B4006DC573 /* RWTUIImageExtras.m */; };
+		AF5DFEC919AD42DD006DC573 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEC519AD42DD006DC573 /* logo1.png */; };
+		AF5DFECA19AD42DD006DC573 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEC619AD42DD006DC573 /* shockedface2_empty.png */; };
+		AF5DFECB19AD42DD006DC573 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEC719AD42DD006DC573 /* shockedface2_full.png */; };
+		AF5DFECC19AD42DD006DC573 /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5DFEC819AD42DD006DC573 /* shockedface2_half.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF5DFE8F19AD1572006DC573 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF5DFE5E19AD1572006DC573 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5DFE6519AD1572006DC573;
+			remoteInfo = ScaryBugs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF5DFE6619AD1572006DC573 /* ScaryBugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaryBugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5DFE6919AD1572006DC573 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF5DFE6B19AD1572006DC573 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF5DFE6D19AD1572006DC573 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF5DFE7119AD1572006DC573 /* ScaryBugs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaryBugs-Info.plist"; sourceTree = "<group>"; };
+		AF5DFE7319AD1572006DC573 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF5DFE7519AD1572006DC573 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF5DFE7719AD1572006DC573 /* ScaryBugs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScaryBugs-Prefix.pch"; sourceTree = "<group>"; };
+		AF5DFE7819AD1572006DC573 /* MERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERAppDelegate.h; sourceTree = "<group>"; };
+		AF5DFE7919AD1572006DC573 /* MERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERAppDelegate.m; sourceTree = "<group>"; };
+		AF5DFE7C19AD1572006DC573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF5DFE7E19AD1572006DC573 /* MERMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERMasterViewController.h; sourceTree = "<group>"; };
+		AF5DFE7F19AD1572006DC573 /* MERMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERMasterViewController.m; sourceTree = "<group>"; };
+		AF5DFE8119AD1572006DC573 /* MERDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERDetailViewController.h; sourceTree = "<group>"; };
+		AF5DFE8219AD1572006DC573 /* MERDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERDetailViewController.m; sourceTree = "<group>"; };
+		AF5DFE8419AD1572006DC573 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF5DFE8A19AD1572006DC573 /* ScaryBugsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaryBugsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5DFE8B19AD1572006DC573 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF5DFE9319AD1572006DC573 /* ScaryBugsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaryBugsTests-Info.plist"; sourceTree = "<group>"; };
+		AF5DFE9519AD1572006DC573 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF5DFE9719AD1572006DC573 /* ScaryBugsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugsTests.m; sourceTree = "<group>"; };
+		AF5DFEA319AD179B006DC573 /* MERScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERScaryBugData.h; sourceTree = "<group>"; };
+		AF5DFEA419AD179B006DC573 /* MERScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERScaryBugData.m; sourceTree = "<group>"; };
+		AF5DFEA619AD184F006DC573 /* MERScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERScaryBugDoc.h; sourceTree = "<group>"; };
+		AF5DFEA719AD184F006DC573 /* MERScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERScaryBugDoc.m; sourceTree = "<group>"; };
+		AF5DFEAA19AD1C85006DC573 /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
+		AF5DFEAB19AD1C85006DC573 /* centipede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centipede.jpg; sourceTree = "<group>"; };
+		AF5DFEAC19AD1C85006DC573 /* centipedeThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centipedeThumb.jpg; sourceTree = "<group>"; };
+		AF5DFEAD19AD1C85006DC573 /* ladybug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ladybug.jpg; sourceTree = "<group>"; };
+		AF5DFEAE19AD1C85006DC573 /* ladybugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ladybugThumb.jpg; sourceTree = "<group>"; };
+		AF5DFEAF19AD1C85006DC573 /* potatoBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBug.jpg; sourceTree = "<group>"; };
+		AF5DFEB019AD1C85006DC573 /* potatoBugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBugThumb.jpg; sourceTree = "<group>"; };
+		AF5DFEB119AD1C85006DC573 /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
+		AF5DFEB219AD1C85006DC573 /* wolfSpiderThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpiderThumb.jpg; sourceTree = "<group>"; };
+		AF5DFEBD19AD4297006DC573 /* RWTRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTRateView.h; sourceTree = "<group>"; };
+		AF5DFEBE19AD4297006DC573 /* RWTRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRateView.m; sourceTree = "<group>"; };
+		AF5DFEC119AD42B4006DC573 /* RWTUIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTUIImageExtras.h; sourceTree = "<group>"; };
+		AF5DFEC219AD42B4006DC573 /* RWTUIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTUIImageExtras.m; sourceTree = "<group>"; };
+		AF5DFEC519AD42DD006DC573 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		AF5DFEC619AD42DD006DC573 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		AF5DFEC719AD42DD006DC573 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		AF5DFEC819AD42DD006DC573 /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5DFE6319AD1572006DC573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5DFE6C19AD1572006DC573 /* CoreGraphics.framework in Frameworks */,
+				AF5DFE6E19AD1572006DC573 /* UIKit.framework in Frameworks */,
+				AF5DFE6A19AD1572006DC573 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5DFE8719AD1572006DC573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5DFE8C19AD1572006DC573 /* XCTest.framework in Frameworks */,
+				AF5DFE8E19AD1572006DC573 /* UIKit.framework in Frameworks */,
+				AF5DFE8D19AD1572006DC573 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF5DFE5D19AD1572006DC573 = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE6F19AD1572006DC573 /* ScaryBugs */,
+				AF5DFE9119AD1572006DC573 /* ScaryBugsTests */,
+				AF5DFE6819AD1572006DC573 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF5DFE6719AD1572006DC573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE6619AD1572006DC573 /* ScaryBugs.app */,
+				AF5DFE8A19AD1572006DC573 /* ScaryBugsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF5DFE6819AD1572006DC573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE6719AD1572006DC573 /* Products */,
+				AF5DFE6919AD1572006DC573 /* Foundation.framework */,
+				AF5DFE6B19AD1572006DC573 /* CoreGraphics.framework */,
+				AF5DFE6D19AD1572006DC573 /* UIKit.framework */,
+				AF5DFE8B19AD1572006DC573 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF5DFE6F19AD1572006DC573 /* ScaryBugs */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFEC419AD42C6006DC573 /* Art */,
+				AF5DFEC019AD429C006DC573 /* Helpers */,
+				AF5DFEBC19AD427A006DC573 /* Views */,
+				AF5DFEA919AD1C85006DC573 /* ScaryBugs */,
+				AF5DFEA219AD16D7006DC573 /* Model */,
+				AF5DFEA119AD16B8006DC573 /* GUI */,
+				AF5DFE8419AD1572006DC573 /* Images.xcassets */,
+				AF5DFE7019AD1572006DC573 /* Supporting Files */,
+			);
+			path = ScaryBugs;
+			sourceTree = "<group>";
+		};
+		AF5DFE7019AD1572006DC573 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE7119AD1572006DC573 /* ScaryBugs-Info.plist */,
+				AF5DFE7219AD1572006DC573 /* InfoPlist.strings */,
+				AF5DFE7519AD1572006DC573 /* main.m */,
+				AF5DFE7719AD1572006DC573 /* ScaryBugs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF5DFE9119AD1572006DC573 /* ScaryBugsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE9719AD1572006DC573 /* ScaryBugsTests.m */,
+				AF5DFE9219AD1572006DC573 /* Supporting Files */,
+			);
+			path = ScaryBugsTests;
+			sourceTree = "<group>";
+		};
+		AF5DFE9219AD1572006DC573 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE9319AD1572006DC573 /* ScaryBugsTests-Info.plist */,
+				AF5DFE9419AD1572006DC573 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF5DFEA119AD16B8006DC573 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFE7819AD1572006DC573 /* MERAppDelegate.h */,
+				AF5DFE7919AD1572006DC573 /* MERAppDelegate.m */,
+				AF5DFE7B19AD1572006DC573 /* Main.storyboard */,
+				AF5DFE7E19AD1572006DC573 /* MERMasterViewController.h */,
+				AF5DFE7F19AD1572006DC573 /* MERMasterViewController.m */,
+				AF5DFE8119AD1572006DC573 /* MERDetailViewController.h */,
+				AF5DFE8219AD1572006DC573 /* MERDetailViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		AF5DFEA219AD16D7006DC573 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFEA319AD179B006DC573 /* MERScaryBugData.h */,
+				AF5DFEA419AD179B006DC573 /* MERScaryBugData.m */,
+				AF5DFEA619AD184F006DC573 /* MERScaryBugDoc.h */,
+				AF5DFEA719AD184F006DC573 /* MERScaryBugDoc.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF5DFEA919AD1C85006DC573 /* ScaryBugs */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFEAA19AD1C85006DC573 /* attribution.txt */,
+				AF5DFEAB19AD1C85006DC573 /* centipede.jpg */,
+				AF5DFEAC19AD1C85006DC573 /* centipedeThumb.jpg */,
+				AF5DFEAD19AD1C85006DC573 /* ladybug.jpg */,
+				AF5DFEAE19AD1C85006DC573 /* ladybugThumb.jpg */,
+				AF5DFEAF19AD1C85006DC573 /* potatoBug.jpg */,
+				AF5DFEB019AD1C85006DC573 /* potatoBugThumb.jpg */,
+				AF5DFEB119AD1C85006DC573 /* wolfSpider.jpg */,
+				AF5DFEB219AD1C85006DC573 /* wolfSpiderThumb.jpg */,
+			);
+			path = ScaryBugs;
+			sourceTree = "<group>";
+		};
+		AF5DFEBC19AD427A006DC573 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFEBD19AD4297006DC573 /* RWTRateView.h */,
+				AF5DFEBE19AD4297006DC573 /* RWTRateView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF5DFEC019AD429C006DC573 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFEC119AD42B4006DC573 /* RWTUIImageExtras.h */,
+				AF5DFEC219AD42B4006DC573 /* RWTUIImageExtras.m */,
+			);
+			name = Helpers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AF5DFEC419AD42C6006DC573 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				AF5DFEC519AD42DD006DC573 /* logo1.png */,
+				AF5DFEC619AD42DD006DC573 /* shockedface2_empty.png */,
+				AF5DFEC719AD42DD006DC573 /* shockedface2_full.png */,
+				AF5DFEC819AD42DD006DC573 /* shockedface2_half.png */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF5DFE6519AD1572006DC573 /* ScaryBugs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5DFE9B19AD1572006DC573 /* Build configuration list for PBXNativeTarget "ScaryBugs" */;
+			buildPhases = (
+				AF5DFE6219AD1572006DC573 /* Sources */,
+				AF5DFE6319AD1572006DC573 /* Frameworks */,
+				AF5DFE6419AD1572006DC573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScaryBugs;
+			productName = ScaryBugs;
+			productReference = AF5DFE6619AD1572006DC573 /* ScaryBugs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF5DFE8919AD1572006DC573 /* ScaryBugsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5DFE9E19AD1572006DC573 /* Build configuration list for PBXNativeTarget "ScaryBugsTests" */;
+			buildPhases = (
+				AF5DFE8619AD1572006DC573 /* Sources */,
+				AF5DFE8719AD1572006DC573 /* Frameworks */,
+				AF5DFE8819AD1572006DC573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5DFE9019AD1572006DC573 /* PBXTargetDependency */,
+			);
+			name = ScaryBugsTests;
+			productName = ScaryBugsTests;
+			productReference = AF5DFE8A19AD1572006DC573 /* ScaryBugsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF5DFE5E19AD1572006DC573 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MER;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					AF5DFE8919AD1572006DC573 = {
+						TestTargetID = AF5DFE6519AD1572006DC573;
+					};
+				};
+			};
+			buildConfigurationList = AF5DFE6119AD1572006DC573 /* Build configuration list for PBXProject "ScaryBugs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF5DFE5D19AD1572006DC573;
+			productRefGroup = AF5DFE6719AD1572006DC573 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF5DFE6519AD1572006DC573 /* ScaryBugs */,
+				AF5DFE8919AD1572006DC573 /* ScaryBugsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF5DFE6419AD1572006DC573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5DFE8519AD1572006DC573 /* Images.xcassets in Resources */,
+				AF5DFEBB19AD1C85006DC573 /* wolfSpiderThumb.jpg in Resources */,
+				AF5DFEC919AD42DD006DC573 /* logo1.png in Resources */,
+				AF5DFECA19AD42DD006DC573 /* shockedface2_empty.png in Resources */,
+				AF5DFECC19AD42DD006DC573 /* shockedface2_half.png in Resources */,
+				AF5DFEB619AD1C85006DC573 /* ladybug.jpg in Resources */,
+				AF5DFE7419AD1572006DC573 /* InfoPlist.strings in Resources */,
+				AF5DFEB419AD1C85006DC573 /* centipede.jpg in Resources */,
+				AF5DFEB319AD1C85006DC573 /* attribution.txt in Resources */,
+				AF5DFEBA19AD1C85006DC573 /* wolfSpider.jpg in Resources */,
+				AF5DFEB519AD1C85006DC573 /* centipedeThumb.jpg in Resources */,
+				AF5DFE7D19AD1572006DC573 /* Main.storyboard in Resources */,
+				AF5DFEB719AD1C85006DC573 /* ladybugThumb.jpg in Resources */,
+				AF5DFECB19AD42DD006DC573 /* shockedface2_full.png in Resources */,
+				AF5DFEB919AD1C85006DC573 /* potatoBugThumb.jpg in Resources */,
+				AF5DFEB819AD1C85006DC573 /* potatoBug.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5DFE8819AD1572006DC573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5DFE9619AD1572006DC573 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF5DFE6219AD1572006DC573 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5DFE8019AD1572006DC573 /* MERMasterViewController.m in Sources */,
+				AF5DFEBF19AD4297006DC573 /* RWTRateView.m in Sources */,
+				AF5DFEC319AD42B4006DC573 /* RWTUIImageExtras.m in Sources */,
+				AF5DFEA519AD179B006DC573 /* MERScaryBugData.m in Sources */,
+				AF5DFE7619AD1572006DC573 /* main.m in Sources */,
+				AF5DFE8319AD1572006DC573 /* MERDetailViewController.m in Sources */,
+				AF5DFE7A19AD1572006DC573 /* MERAppDelegate.m in Sources */,
+				AF5DFEA819AD184F006DC573 /* MERScaryBugDoc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5DFE8619AD1572006DC573 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5DFE9819AD1572006DC573 /* ScaryBugsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF5DFE9019AD1572006DC573 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF5DFE6519AD1572006DC573 /* ScaryBugs */;
+			targetProxy = AF5DFE8F19AD1572006DC573 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF5DFE7219AD1572006DC573 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5DFE7319AD1572006DC573 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF5DFE7B19AD1572006DC573 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5DFE7C19AD1572006DC573 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF5DFE9419AD1572006DC573 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5DFE9519AD1572006DC573 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF5DFE9919AD1572006DC573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF5DFE9A19AD1572006DC573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF5DFE9C19AD1572006DC573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
+				INFOPLIST_FILE = "ScaryBugs/ScaryBugs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF5DFE9D19AD1572006DC573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
+				INFOPLIST_FILE = "ScaryBugs/ScaryBugs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF5DFE9F19AD1572006DC573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScaryBugs.app/ScaryBugs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ScaryBugsTests/ScaryBugsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF5DFEA019AD1572006DC573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScaryBugs.app/ScaryBugs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
+				INFOPLIST_FILE = "ScaryBugsTests/ScaryBugsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF5DFE6119AD1572006DC573 /* Build configuration list for PBXProject "ScaryBugs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5DFE9919AD1572006DC573 /* Debug */,
+				AF5DFE9A19AD1572006DC573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5DFE9B19AD1572006DC573 /* Build configuration list for PBXNativeTarget "ScaryBugs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5DFE9C19AD1572006DC573 /* Debug */,
+				AF5DFE9D19AD1572006DC573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5DFE9E19AD1572006DC573 /* Build configuration list for PBXNativeTarget "ScaryBugsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5DFE9F19AD1572006DC573 /* Debug */,
+				AF5DFEA019AD1572006DC573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF5DFE5E19AD1572006DC573 /* Project object */;
+}
